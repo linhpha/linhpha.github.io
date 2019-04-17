@@ -1,9 +1,13 @@
 Hello World
-<p id="p1">Hello World!</p>
+<input type="button" value="hello" onclick="test()" />
+<div id="divID">
+
+</div>
 <script type="text/javascript">
+
 	Android.test();
 	flag = Android.getdate("flag");
-	document.getElementById("p1").innerHTML += flag;
-// 	window.body.innerHTML += 'Extra stuff';
-// 	window.body.innerHTML += flag;
+	var div = document.getElementById('divID');
+	div.innerHTML += 'Extra stuff';
+	div.innerHTML += flag;
 </script>
