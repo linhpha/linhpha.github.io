@@ -1,8 +1,14 @@
 Hello World
+<div id="divID">
 <input type="button" value="hello" onclick="test()" />
+</div>
 <script type="text/javascript">
 	function test() {Android.test(); }
 	Android.test();
 	flag = Android.flag;
 	console.log(flag);
+	var div = document.getElementById('divID');
+	div.innerHTML += 'Extra stuff';
+	
+	div.innerHTML += flag;
 </script>
